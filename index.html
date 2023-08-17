@@ -2,12 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue</title>
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <link rel="stylesheet" href="../src/css/base.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <h1>Pokemon</h1>
+    <h2>The Kanto Region</h2>
+    <section class="collection-container container-header">
+      <div id="collection-header">
+        <h4>My Collection:</h4>
+        <div class="button-container">
+          <button id="sort-button-az-collection">Sort Pokemon A-Z</button>
+          <button id="sort-button-za-collection">Sort Pokemon Z-A</button>
+        </div>
+      </div>
+      <div class="collection-border"></div>
+    </section>
+    <h4 class="title">All Pokemon:</h4>
+    <div class="button-container">
+      <button id="sort-button-az-pokemon">Sort Pokemon A-Z</button>
+      <button id="sort-button-za-pokemon">Sort Pokemon Z-A</button>
+    </div>
+
+    <p>Total Poison Type: <span id="poison-type"></span></p>
+
+    <section class="pokemon-container container-header">
+      <div class="pokemon-header"></div>
+      <div id="pokemon-name"></div>
+    </section>
+
+    <script src="../src/js/btn.js"></script>
+    <script src="../src/js/main.js"></script>
   </body>
 </html>
